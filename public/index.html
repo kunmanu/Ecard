@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet"> 
+
+        <!-- SCRIPTS -->
+        <script src="https://kit.fontawesome.com/0f005014e4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style/style.css" />
+        <script type="module" src="JS/index.js"></script>
+
+        <title>Paint - Ecard</title>
+    </head>
+    <body>
+        <header class="siteHeader">
+            <!-- <img src="../ressources/color-wheel-removebg-preview.png" alt="" class="logo" /> -->
+            <!-- <h1>Photoshop</h1> -->
+
+        </header>
+        <div class="mainLayout">
+            
+            <section id="paint" class="paint">
+                <div class="Tools-Palette-container">
+                    <div class="toolbox">
+                        <div data-action="++" class="tools SizeTools"><i class="fa-solid fa-plus"></i></div>
+                        <div data-action="--" class="tools SizeTools"><i class="fa-solid fa-minus"></i></div>
+                        <div class="clearer tools"><i class="fa-solid fa-trash-can"></i></div>
+                        
+                        <div class="paintbrush tools"><i class="fa-solid fa-paintbrush"></i></div>
+                        <div data-action="erase" class="tools eraser"><i class="fa-solid fa-eraser"></i></div>
+                    </div>
+                    
+                    <div class="palette">
+                        <div data-color="#5a3b21" class="colors color1"></div>
+                        <div data-color="blue" class="colors color2"></div>
+                        <div data-color="green" class="colors color3"></div>
+                        <div data-color="yellow" class="colors color4"></div>
+                        <div data-color="orange" class="colors color5"></div>
+                        <div data-color="red" class="colors color6"></div>
+                        <div data-color="purple" class="colors color9"></div>
+                        <div data-color="white" class="colors color8"></div>
+                        <div data-color="black" class="colors color7"></div>
+                        <input class="colorwheel" type="color" />
+                    </div>
+                    
+                    <div class="toolbox">
+                        
+                        <div class="download tools"> <i class="fa-solid fa-floppy-disk"></i></div>
+                        <div class="mail tools"> <i class="fa-solid fa-envelope"></i></div>
+                        
+                    </div>
+                </div>
+                <div class="canvasContainer">
+                    <canvas id="canvas" class="canvas" width="800px" height="400px"> </canvas>
+                </div>
+                <p class="saved"></p>
+                <div>
+                    <p>Charger une image : </p>
+                    <form class="userFileForm" action="">
+                        <input class="userImg" type="file">
+                    </form>
+                </div>
+            </section>
+        </div>
+        
+        <div class="mailContainer-back hide">
+            <div class="mailContainer">
+                <div>
+                    <button class="closeMail">X</button>
+                    <h4 class="mailTitle">Formulaire d'envoi</h4>
+                </div>
+                <form class="mailForm">
+                    <input type="hidden" name="canvasData" id="canvasData" />
+                    <label for="sender">Expediteur : </label><br />
+                    <input type="email" name="sender" value="sender@a.a" id="sender" /><br />
+                    <label for="recipient">Destinataire : </label><br />
+                    <input type="email" name="recipient" value="recipient@a.a" id="recipient" /> <br />
+                    
+                    <label for="message">Votre message : </label><br />
+
+                    <input name="message" type="text"><br />
+                    <img src="" alt="" class="canvasPreview"><br />
+                    <input class="submitMail button" type="submit" value="Envoyer" />
+                </form>
+            </div>
+        </div>
+        <!--  -->
+        <script src="./JS/ajax.js"></script>
+    </body>
+    </html>
+    

@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: rgb(247, 244, 246);
+}
+
+h4 {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.colorwheel {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 32px;
+  width: 40px;
+}
+
+p {
+  margin: 5px 0px;
+}
+
+button, .button {
+  background-color: gray; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button :hover, .button:hover {
+  transform: scale(1.05);
+}
+
+.canvasContainer {
+  padding-top: 1rem;
+}
+
+.canvas {
+  border: solid black 1px;
+}
+
+.logo {
+  width: 40px;
+}
+
+.siteHeader {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%);
+  border-bottom: solid black 1px;
+  box-shadow: 0px 0px 5px black;
+}
+
+#canvas {
+  background: white;
+  box-shadow: 0px 0px 3px black;
+}
+
+.colors {
+  border: solid black 1px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 40px;
+}
+
+.colors:hover, .tools:hover {
+  transform: scale(1.05);
+}
+
+.paint {
+  margin-top: 1rem;
+}
+
+.mainLayout {
+  display: flex;
+  justify-content: center;
+}
+
+.tools {
+  box-shadow: 0px 0px 3px black;
+  background: white;
+  border: solid black 1px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+.Tools-Palette-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mailContainer-back {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mailContainer {
+  background: rgb(247, 244, 246);
+  display: flex-inline;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35%;
+  height: 75%;
+  border: 3px solid transparent;
+  -o-border-image: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%);
+     border-image: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%);
+  border-image-slice: 1;
+}
+.mailContainer div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.canvasPreview {
+  height: 100px;
+  border: solid 1px darkgray;
+}
+
+.selected {
+  transform: scale(1.05);
+}/*# sourceMappingURL=style.css.map */
