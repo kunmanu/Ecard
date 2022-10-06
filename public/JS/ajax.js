@@ -1,6 +1,6 @@
 
 
-let form = document.querySelector('.form')
+let form = document.querySelector('.mailForm')
 
 
 
